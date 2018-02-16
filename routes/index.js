@@ -13,7 +13,7 @@ exports.view = function(req, res){
       },
       { 'name': 'Quest Board',
 	'link': 'play',
-        'image': 'lorempixel.city.1.jpeg',
+        'image': 'berlin.jpeg',
         'id': 'project2'
       },
       { 'name': 'Practice',
