@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars');
 
 //adding variables??? routes?????
 
+var login = require('./routes/login');
 var index = require('./routes/index');
 var hello = require('./routes/hello');
 var play = require('./routes/play');
@@ -40,7 +41,7 @@ app.get('/project/:name', project.viewProject);
 
 // play.view from play.js
 app.get('/play', play.view);
-
+app.get('index', index.view);
 
 //Trying to set up play here.... this is for the link
 /*
