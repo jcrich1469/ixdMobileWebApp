@@ -1,0 +1,195 @@
+.container {
+	
+	top:100px;
+	left:100px;
+	/*iphone6 dimensions*/	
+	width: 667px;
+	height:	375px;
+    	/*border-radius: 25px;
+    	border: 4px solid black;
+    	padding: 20px; */
+	font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+p {
+	
+	font-size:8.533%;
+	
+}
+
+.statusbar{
+
+	width: 100%;
+	height: 20px;
+
+}
+
+.top{
+
+	display: grid;
+	grid-template-columns:auto 32px 32px;
+	width: 100%;
+	height: 32px;
+	background: #F5F5F5;
+	color:black;
+
+	opacity:0.2;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align:left;
+	
+	
+}
+
+
+.top h3{
+	
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align:left;
+	font-size:24px;
+	margin: auto auto;
+	opacity:1.0;
+}
+
+.top img{
+
+	/*8.533%*/
+	height:32px;
+	width:32px;	
+	
+}
+
+.center {
+	
+	
+	display:flex;
+	
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	/*
+	grid-template-columns:auto auto auto;
+	
+	*/
+	
+	
+	
+    	height:58.4%;
+	width:100%;
+    	border: 3px solid black; 
+	margin: 0;
+
+}
+
+
+.center .roundedImage{
+
+	border-radius: 20px;
+ 	display: block;
+	
+    	margin-left: auto;
+   	margin-right: auto;
+	padding:2%;
+	height:100%;
+	width:100%;
+
+	
+	
+}
+
+.center p{
+
+	font-size:20%;
+	color:black;
+
+}
+
+
+#project1.button{
+
+	border-radius: 20px;
+ 	display: block;
+    	margin-left: auto;
+   	margin-right: auto;
+	padding:2%;
+	height:90%;
+	width:33%;
+
+}
+
+#project1 p{
+
+	font-size:100%;
+
+}
+
+#project2.button{
+
+	border-radius: 20px;
+ 	display: block;
+    	margin-left: auto;
+   	margin-right: auto;
+	padding:2%;
+	height:90%;
+	width:33%;
+
+}
+
+#project2 p{
+
+	font-size:90%;
+
+}
+
+#project3.button{
+
+	border-radius: 20px;
+ 	display: block;
+    	margin-left: auto;
+   	margin-right: auto;
+	padding:2%;
+	height:90%;
+	width:33%;
+
+}
+
+#project3 p{
+
+	font-size:100%;
+
+}
+
+.bottom{
+
+	bottom:0px;	
+	color:#DBDBDB;
+	height: 13.067%;
+	width:100%;
+
+} 
+
+.bottom img{
+	
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	height:100%;
+
+}
+
+/*in original*/
+.button a {
+
+    text-align: center;
+
+
+}
+
+
+
+.flex-container{
+
+	display:flex;
+
+}

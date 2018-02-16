@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Home Page</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+	<!-- this is a comment in HTML -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->        
+</head>
+
+<body>
+	<div class="container">
+		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+		<!-- p means paragraph -->
+
+		<!-- temporary-->
+		<!--div class="statusbar">
+					
+			<img src="images/iphonestatusbar.png" alt="statusbar" height="22px" width="100%">				
+			
+		</div-->
+
+		<!--top section to be altered from this template. Stakeout this area.-->
+		<div class="top">
+			
+			<h3>Home Page</h3>
+		
+		</div>
+
+		<div class="center">
+
+		<!-- replacement-->
+
+		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+		
+		<!-- the each blocks, allows a loop over the stringified JSON array-->
+		<!-- each of these are a button, style in css-->
+	
+    			{{#each projects}}
+      		
+			<div class="button" id="{{id}}">
+        		
+				<a href="{{link}}">
+          			
+					<img src="images/{{image}}" class="roundedImage">
+          				<p>{{name}}</p>
+        			</a>
+      			</div>
+    			{{/each}}
+
+		</div>
+		
+		
+		<!--div class="bottom">
+
+			<div class="button">
+        		
+				<a href="image/button">
+          			
+					<img src="images/exiticon.png" class="roundedImage">
+					
+				<a href="images/play.png" id="leftimage">
+        			
+					<img src="images/iphoneinfo.png" alt="info">
+
+      				</a>
+
+				<a href="images/iphoneinfo.png" id="rightimage">
+        			
+					<img src="images/iphonehamburger.png" alt="hamburger">
+
+        			</a>
+      			</div>
+		
+		</div-->
+		
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!--added the following script for direct access to the JQuery listeners-->
+	<!--script src="introHCI.js></script-->
+</body>
+</html>
