@@ -30,8 +30,15 @@ var index = require('./routes/index');
 var project = require('./routes/project');
 //routing, from the routes folder.... 
 
+//assigning paths
 
-app.get('/', index.view);
+//app.get('/', index.view);
+//new paths
+
+app.get('/', login.view);
+app.get('/index', index.view);
+
+//for those project lists.
 app.get('/project', project.viewProject);
 app.get('/project/:name', project.viewProject);
 
@@ -41,6 +48,7 @@ app.get('/project/:name', project.viewProject);
 
 // play.view from play.js
 app.get('/play', play.view);
+app.get('/login',login.view);
 app.get('index', index.view);
 
 //Trying to set up play here.... this is for the link
