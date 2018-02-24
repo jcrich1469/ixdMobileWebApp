@@ -2,7 +2,7 @@
 	
 	top:100px;
 	left:100px;
-	/*iphone6 dimensions*/	
+	/*iphone6 dimensions in points 667 by 375, the px dimensions are 750 x 1334*/	
 	width: 667px;
 	height:	375px;
     	/*border-radius: 25px;
@@ -26,11 +26,11 @@ p {
 }
 
 .top{
-
+	/*32px = 8.533333333*/
 	display: grid;
 	grid-template-columns:auto 32px 32px;
 	width: 100%;
-	height: 32px;
+	height: 8.533333333%;
 	background: #F5F5F5;
 	color:black;
 
@@ -54,8 +54,8 @@ p {
 .top img{
 
 	/*8.533%*/
-	height:32px;
-	width:32px;	
+	height:8.533333333px;
+	width:8.533333333px;	
 	
 }
 
@@ -113,7 +113,7 @@ p {
    	margin-right: auto;
 	padding:2%;
 	height:90%;
-	width:33%;
+	width:50%;
 
 }
 
@@ -131,7 +131,7 @@ p {
    	margin-right: auto;
 	padding:2%;
 	height:90%;
-	width:33%;
+	width:50%;
 
 }
 
@@ -143,19 +143,19 @@ p {
 
 #project3.button{
 
-	border-radius: 20px;
+	border-radius: 0px;
  	display: block;
     	margin-left: auto;
    	margin-right: auto;
-	padding:2%;
+	padding:0%;
 	height:90%;
-	width:33%;
+	width:0%;
 
 }
 
 #project3 p{
 
-	font-size:100%;
+	font-size:0%;
 
 }
 

@@ -8,25 +8,25 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
-//adding variables??? routes?????
+//adding variables, the routes.
+//step #1.
 
 var login = require('./routes/login');
 var index = require('./routes/index');
 var hello = require('./routes/hello');
 var play = require('./routes/play');
-
+var game = require('./routes/game');
+var profile = require('./routes/profile');
 
 // Example route
 // var user = require('./routes/user');
 
 var app = express();
 
-
-
 //importing extra routes
 //That was for project....
 
-var index = require('./routes/index');
+//var index = require('./routes/index');
 var project = require('./routes/project');
 //routing, from the routes folder.... 
 
@@ -37,10 +37,12 @@ var project = require('./routes/project');
 
 app.get('/', login.view);
 app.get('/index', index.view);
+app.get('/play', play.view);
+app.get('/profile', profile.view);
 
 //for those project lists.
-app.get('/project', project.viewProject);
-app.get('/project/:name', project.viewProject);
+//app.get('/project', project.viewProject);
+//app.get('/project/:name', project.viewProject);
 
 // office hour changes
 
@@ -50,6 +52,8 @@ app.get('/project/:name', project.viewProject);
 app.get('/play', play.view);
 app.get('/login',login.view);
 app.get('index', index.view);
+app.get('/game', game.view);
+app.get('/profile', profile.view);
 
 //Trying to set up play here.... this is for the link
 /*

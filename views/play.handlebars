@@ -34,13 +34,14 @@
 
   			<div id="myCarousel" class="carousel slide" data-ride="carousel">
     
-		<!-- Indicators -->
+			<!-- Indicators -->
+
     				<ol class="carousel-indicators">
-      					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      					<li data-target="#myCarousel" data-slide-to="0"></li>
       					<li data-target="#myCarousel" data-slide-to="1"></li>
       					<li data-target="#myCarousel" data-slide-to="2"></li>
       					<li data-target="#myCarousel" data-slide-to="3"></li>
-      					<li data-target="#myCarousel" data-slide-to="4"></li>
+      					<li data-target="#myCarousel" data-slide-to="4" class="active"></li>
       					<li data-target="#myCarousel" data-slide-to="5"></li>
       					<li data-target="#myCarousel" data-slide-to="6"></li>
       					<li data-target="#myCarousel" data-slide-to="7"></li>
@@ -48,8 +49,10 @@
     				</ol>
 
     <!-- Wrapper for slides -->
+				
 				<div class="carousel-inner">
 	
+					
 					<div class="item active">
 
 					        <img src="images/slide/berlin.jpeg" alt="berlin" style="width:100%;">
@@ -124,8 +127,12 @@
 			
 			<h1>Carousel</h1>
 			
+			
+			
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
-			<p class="button">Start quest</p>
+			<a class="{{link}}">Start quest</a>
+			
+			
 
 		</div>
 
@@ -133,15 +140,13 @@
 
     			<h4>Quest List</h4>
 
-			<a href="#" class="button">Game 1</a>
-			<a href="#" class="button">Game 2</a>
-			<a href="#" class="button">Game 3</a>
-			<a href="#" class="button">Game 4</a>
-			<a href="#" class="button">Game 5</a>
-			<a href="#" class="button">Game 6</a>
-			<a href="#" class="button">Game 7</a>
-			<a href="#" class="button">Game 8</a>
-			<a href="#" class="button">Game 9</a>
+			<!--for each-->
+			{{#each games}}
+
+				<a href="{{link}}" class="button" id = "{{id}}">{{name}}</a>
+
+			{{/each}}
+			
 				
 			<!--button class="button">Button</button-->
 			
